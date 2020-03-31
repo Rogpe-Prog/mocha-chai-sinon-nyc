@@ -1,0 +1,14 @@
+
+<%- include('../partials/header.ejs') %>
+
+<div class="starter-template">
+  <h1>ESCOLHA SEU NUMERO</h1>
+  <ul>
+      <% numeros.map( i => { %>
+        <li><a href="/tabuada/do/<%= i %>">Tabuada do <%= i %></li>
+       <% }) %>
+  </ul>
+</div>
+
+
+<%- include('../partials/footer.ejs') %>
